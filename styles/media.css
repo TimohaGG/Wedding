@@ -7,4 +7,36 @@
     .invitation span{
         font-size: 50px;
     }
+
+    .date{
+        font-size:64px;
+    }
+
+    .logo{
+        font-size:64px !important;
+    }
+
+    .slogan{
+        font-size: 20px !important;
+        padding-left: 10px !important;
+    }
+}
+
+@media screen and (max-width:800px){
+    .header .logo{
+        align-self: center;
+        max-width: 150px;
+        text-align: center;
+    }
+
+    .header .date-wrap
+    {
+        align-self: center;
+    }
+
+    .header{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
 }
