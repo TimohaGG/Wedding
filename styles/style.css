@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Mak";
+    src: url('../fonts/MAK.eot') format('embedded-opentype'),
+        url('../fonts/MAK.woff') format('woff'),
+        url('../fonts/MAK-bold.eot') format('embedded-opentype'),
+        url('../fonts/MAK-bold.woff') format('woff'),
+  }
+
 *{
     margin: 0;
 }
@@ -10,7 +18,7 @@
     height: 100vh;
 }
 
-.image{
+.invitation-image{
     background-image: url(../img/rick-rothenberg-eIUQ10YU7dU-unsplash.jpg);
     background-size: 100% 100%;
     background-position: bottom;
@@ -48,6 +56,25 @@
 .invitation span{
     font-size: 96px;
     font-family: "Mak";
-    font-weight: 100;
+    font-weight: 200;
    
+}
+
+.date-wrap{
+    display: flex;
+}
+
+.date-wrap .slogan{
+    color: #606060;
+    font-family: Mak;
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    font-family: Mak;
+    font-size: 128px;
+    font-weight: 300;
 }
