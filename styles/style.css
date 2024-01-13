@@ -6,15 +6,16 @@
         url('../fonts/MAK-bold.woff') format('woff'),
   }
 
-*{
+*,*::after,*::before{
     margin: 0;
+    padding: 0;
+    font-family: Montserrat;
 }
 
 .wrap{
     max-width: 1300px;
     min-width: 300px;
     margin: 0 auto;
-    height: 100vh;
 }
 
 header{
@@ -34,7 +35,7 @@ header{
     justify-content: center;
     padding-right: 120px;
     padding-left: 120px;
-    
+    margin-bottom: 50px;
 }
 
 .date-wrap{
@@ -74,10 +75,9 @@ header{
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Mak;
-    font-size: 110px;
+    font-size: 128px;
     font-weight: 300;
     align-self: self-end;
-    
     padding-top: 40px;
 }
 
@@ -86,9 +86,7 @@ header{
     background-size: 100% 100%;
     background-position: bottom;
     background-repeat: no-repeat;
-    
-    height: 664px;
-    border-radius: 20px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +101,7 @@ header{
     flex-direction: column;
     color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Montserrat;
+    
     font-size: 30px;
     font-weight: 500;
     text-align: center;
@@ -135,3 +133,148 @@ header{
     transform: translateY(0);
     opacity: 1;
   }
+
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 125px;
+}
+
+section .head{
+    color: #606060;
+    font-family: Mak;
+    font-size: 128px;
+    font-weight: 300;
+    position: relative;
+    display: block;
+    padding-bottom: 30px;
+}
+
+section .head::after{
+    content: "локація";
+    display: block;
+    text-align: center;
+    font-family: Poiret One;
+    font-size: 64px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    
+}
+
+.location p{
+    color: #363636;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.location span{
+    display: block;
+    color: #363636;
+    font-size: 32px;
+}
+
+.location span:first-of-type{
+    padding-top: 40px;
+}
+
+
+.location .button{
+    width: 290px;
+    height: 55px;
+    background-color: #D9D9D9;
+    font-family: Mak;
+    font-size: 24px;
+    font-weight: 300;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.location .button::before{
+    content: url(../img/location.png);
+    width: 23px;
+    height: 34px;
+    position: absolute;
+    left:20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.location .button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #363636;
+    text-decoration: none;
+}
+.location .button:hover{
+    background-color: #c0c0c0;
+}
+
+.location .button:active{
+    background-color: #afafaf;
+}
+
+.timing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #606060;
+    color: white;
+}
+
+.timing .head{
+    color: white;
+    text-transform: uppercase;
+}
+
+.timing .head::after{
+    content: "таймінг";
+    right: -20%;
+    text-transform: lowercase;
+}
+
+.timing .bar{
+   
+    height: 67px;
+    width: 2px;
+    background-color: #FFF;
+    
+}
+
+.timing-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-slot{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.time-slot span:first-child{
+    font-family: Mak;
+    font-size: 48px;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.time-slot span:last-child{
+    font-family: Poiret One;
+    font-size: 24px;
+    font-weight: 400;
+}

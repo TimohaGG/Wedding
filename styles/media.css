@@ -20,6 +20,36 @@
         font-size: 20px !important;
         padding-left: 10px !important;
     }
+
+    .location{
+        margin-top: 75px;
+    }
+    .location span, .location p{
+        font-size: 20px ; 
+    }
+
+    .location p{
+        padding-top: 30px;
+    }
+    .location h2{
+        font-size: 64px;
+        padding-bottom: 10px;
+    }
+
+    .location h2::after{
+        font-size: 32px;
+    }
+
+    .location span:last-of-type{
+        margin-bottom: 50px;
+    }
+
+    .location .button{
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+  
 }
 
 @media screen and (max-width:800px){
