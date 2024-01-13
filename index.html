@@ -78,32 +78,7 @@
     
     <script src="scripts/script.js"></script>
     <script>
-        function listFonts () {
-
-            let fonts = []
-
-            for (let node of document.querySelectorAll('*')) {
-
-            if (!node.style) continue
-
-            for (let pseudo of ['', ':before', ':after']) {
-
-                let fontFamily = getComputedStyle(node, pseudo).fontFamily
-
-                fonts = fonts.concat(fontFamily.split(/\n*,\n*/g))
-
-            }
-
-            }
-
-            // Remove duplicate elements from fonts array
-            // and remove the surrounding quotes around elements
-            return [...new Set(fonts)]
-            .map(font => font.replace(/^\s*['"]([^'"]*)['"]\s*$/, '$1').trim())
-
-        }
-
-        alert(listFonts());
+       
     </script>
 </body>
 </html>
