@@ -50,6 +50,14 @@
         font-size: 16px;
     }
   
+    .timing .head{
+        font-size: 64px;
+    }
+
+    .timing .head::after{
+        font-size: 32px;
+        bottom: 20px;
+    }
 }
 
 @media screen and (max-width:800px){

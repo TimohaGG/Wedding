@@ -87,11 +87,11 @@ header{
     background-size: 100% 100%;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-;
+    
 }
 
 .invitation{
@@ -108,6 +108,7 @@ header{
     font-weight: 500;
     text-align: center;
     max-width: 700px;
+    max-height: 600px;
     margin: 0 auto;
     text-wrap: wrap;
     padding-left: 30px;
@@ -252,7 +253,8 @@ section .head::after{
     height: 67px;
     width: 2px;
     background-color: #FFF;
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .timing-wrap{
@@ -265,18 +267,58 @@ section .head::after{
 .time-slot{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
-.time-slot span:first-child{
+.time-slot span{
     font-family: Mak;
     font-size: 48px;
     font-weight: 300;
     color: #FFF;
+    position: relative;
+    width: 100%;
+    
 }
 
-.time-slot span:last-child{
+.time-slot span::after{
+    content: "велком бар";
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    bottom:-20%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.time-slot.ceremony span::after{
+    content: "виїздна церімонія";
+}
+
+.time-slot.dinner span::after{
+    content:"вечеря" ;
+}
+
+.time-slot.dance span::after{
+    content: 'танці';
+}
+
+.time-slot.evening span::after{
+    content: "вечірня церемонія";
+}
+
+.time-slot.evening{
+    margin-bottom: 10px;
+}
+/* .time-slot span:last-child{
     font-family: Poiret One;
     font-size: 24px;
     font-weight: 400;
+} */
+
+.timing .caption{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
