@@ -79,6 +79,22 @@
         width: 300px;
         font-size: 20px;
     }
+
+    .dress-code h3{
+        font-size: 24px;
+    }
+
+    .dress-code h3::after{
+        font-size: 13px;
+    }
+
+    .colors{
+        margin-top: 30px;
+    }
+    .colors .color-circle{
+        width: 70px !important;
+        height: 70px !important;
+    }
 }
 
 @media screen and (max-width:870px){
@@ -102,4 +118,11 @@
         width: 100vw;
     }
    
+    .colors{
+        margin-top: 30px;
+    }
+    .colors .color-circle{
+        width: 100px;
+        height: 100px;
+    }
 }
