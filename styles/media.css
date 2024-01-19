@@ -95,6 +95,47 @@
         width: 70px !important;
         height: 70px !important;
     }
+
+    .guests{
+        width: 300px;
+    }
+
+    .guests .logo h2{
+        font-size: 64px;
+    }
+
+    .guests .logo h2::after{
+        font-size: 20px;
+    }
+
+    .guests p{
+        width: 300px;
+        font-size: 20px;
+    }
+    .guests input[type="text"]{
+        font-size: 15px;
+    }
+
+    .guests .yes-no label{
+        font-size: 15px;
+    }
+
+    .guests form p{
+        font-size: 15px;
+    }
+
+    .guests .contactsButton .button{
+        width: 130px;
+        height: 30px;
+    }
+
+    .guests .contactsButton .button a{
+        font-size: 10px;
+    }
+
+    .guests .contactsButton{
+        gap:30px;
+    }
 }
 
 @media screen and (max-width:870px){
