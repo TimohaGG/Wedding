@@ -15,3 +15,24 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+
+let defInpTexts = {
+  name_surname : "Ваше ім'я прізвище",
+  people_amount : "В якому складі на вас чекати?"
+};
+
+function togleInputText(e){
+ 
+  let inp = e.target;
+  let text = defInpTexts[inp.name];
+  console.log(text);
+  if(e.type=="focus"){
+    if(inp.value==text) inp.value = '';
+  }
+  else{
+    if(inp.value=='') inp.value = text;
+  }
+  console.log(e);
+}
+             onblur="if(this.value=='') this.value = `Ваше ім''я прізвище`"
