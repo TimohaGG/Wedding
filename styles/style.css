@@ -535,6 +535,7 @@ section .head::after{
     display: grid;
     grid-template-columns: repeat(2,50%);
     gap:70px;
+    margin-top: 70px;
 }
 .guests .contactsButton .button{
     width: 270px;
