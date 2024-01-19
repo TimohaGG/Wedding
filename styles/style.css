@@ -76,7 +76,7 @@ header{
     
 }
 
-.header .logo{
+.main-logo{
     color: #8D8D8D;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -240,6 +240,7 @@ section .head::after{
     text-align: center;
     background-color: #606060;
     color: white;
+    padding-top:125px;
 }
 
 .timing .head{
@@ -329,7 +330,7 @@ section .head::after{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 125px;
 }
 
 
@@ -452,7 +453,7 @@ section .head::after{
     font-size: 128px;
     font-weight: 300;
     text-transform: uppercase;
-    margin-top: 160px;
+    margin-top: 125px;
     position: relative;
 }
 
@@ -536,6 +537,7 @@ section .head::after{
     grid-template-columns: repeat(2,50%);
     gap:70px;
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 .guests .contactsButton .button{
     width: 270px;
@@ -556,4 +558,49 @@ section .head::after{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+footer{
+    border-top: 1px solid #606060;
+}
+
+footer h2{
+  color: #606060;
+  text-align: center;
+  font-family: "Poiret One";
+  font-size: 64px;
+  font-weight: 400;
+  padding: 110px;
+}
+
+footer .dateBG{
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Mak;
+    font-size: 150px;
+    font-weight: 300;
+    background-image: url(../img/rick-rothenberg-eIUQ10YU7dU-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .main-logo{
+    background-image: url(../img/rick-rothenberg-eIUQ10YU7dU-unsplash.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+   text-shadow: none;
+   background-position: left;
+   background-size: cover;
+}
+
+footer .photo{
+    width: 100vw;
+    height: 70vh;
+    background-image:url(../img/photo.png) ;
 }
