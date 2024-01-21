@@ -224,11 +224,11 @@ section .head::after{
     color: #363636;
     text-decoration: none;
 }
-.location .button:hover{
+.button:hover{
     background-color: #c0c0c0;
 }
 
-.location .button:active{
+.button:active{
     background-color: #afafaf;
 }
 
@@ -603,4 +603,6 @@ footer .photo{
     width: 100vw;
     height: 70vh;
     background-image:url(../img/photo.png) ;
+   background-repeat: no-repeat;
+    background-position: center top;
 }

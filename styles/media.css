@@ -111,17 +111,27 @@
     .guests p{
         width: 300px;
         font-size: 20px;
+        margin-top: 35px;
     }
     .guests input[type="text"]{
         font-size: 15px;
+        box-sizing: border-box;
+        width: 100%
     }
 
     .guests .yes-no label{
         font-size: 15px;
     }
 
+    .guests form{
+        margin-top: 70px;
+        gap:30px;
+        width: fit-content;
+    }
+
     .guests form p{
         font-size: 15px;
+        margin-top: 0;
     }
 
     .guests .contactsButton .button{
@@ -135,6 +145,29 @@
 
     .guests .contactsButton{
         gap:30px;
+        margin: 30px 0;
+    }
+
+    .guests .yes-no label input{
+        width: 1em;
+        height: 1em;
+        margin-right: 10px;
+    }
+
+    footer h2{
+        font-size: 32px;
+        padding: 40px 90px;
+    }
+
+    footer .dateBG{
+        font-size: 60px;
+        max-height: 130px;
+    }
+
+    footer .photo{
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
     }
 }
 
