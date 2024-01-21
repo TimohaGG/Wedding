@@ -294,6 +294,7 @@ section .head::after{
 .time-slot span::after{
     content: "велком бар";
     display: block;
+    font-family: Poiret One;
     font-size: 24px;
     position: absolute;
     bottom:-20%;
