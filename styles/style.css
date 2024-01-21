@@ -563,7 +563,9 @@ section .head::after{
 }
 
 footer{
-    border-top: 1px solid #606060;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: 40px;
+   padding-top: 40px;
 }
 
 footer h2{
