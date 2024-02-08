@@ -32,7 +32,7 @@ header{
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-family: "MakBold";
+    font-family: Mak;
 }
 
 .header{
@@ -303,7 +303,7 @@ section .head::after{
 }
 
 .time-slot.ceremony span::after{
-    content: "виїздна церімонія";
+    content: "виїздна церемонія";
 }
 
 .time-slot.dinner span::after{
