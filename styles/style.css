@@ -303,7 +303,7 @@ section .head::after{
 }
 
 .time-slot.ceremony span::after{
-    content: "виїздна церемонія";
+    content: "церемонія";
 }
 
 .time-slot.dinner span::after{
@@ -612,10 +612,15 @@ footer .photo{
     background-position: center top;
 }
 
+
+.moneySection{
+    justify-content: center;
+    display: flex;
+}
 .money{
     max-width:500px;
     font-family: "Poiret One";
     font-size: 32px;
-    font-weight: 400;
     text-align: center;
+   
 }
