@@ -180,7 +180,7 @@
 
     .money{
        
-        font-size: 20px;
+        font-size: 30px;
         
     }
 
@@ -214,5 +214,9 @@
         width: 100px;
         height: 100px;
     }
-
+    .money{
+       max-width: 250px;
+        font-size: 20px;
+        
+    }
 }
